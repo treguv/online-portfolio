@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#body-container {
+}
+
+#header-list {
+  list-style-type: none;
+}
+#head-row {
+  border-bottom: black solid 2px;
+}
+
+/* About Me Header */
+#about-me-header {
+  border-bottom: black solid 2px;
+}
