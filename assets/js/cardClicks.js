@@ -14,3 +14,14 @@ $("#weather-dashboard").on("click", function () {
 $("#run-buddy").on("click", function () {
   open("https://treguv.github.io/run-buddy/");
 });
+
+//Make the nav bar elements change size based on screen size
+function resizeNav() {
+  if ($(window).width() > 768) {
+    $(".nav-item").each(function () {
+      $(this).removeClass("list-inline-item");
+      $(this).addClass("text-right");
+    });
+  }
+}
+resizeNav();
