@@ -22,6 +22,10 @@ function resizeNav() {
       $(this).removeClass("list-inline-item");
       $(this).addClass("text-right");
     });
+    // console.log($("#footer-row #contact-list"));
+    // $("#contact-me").removeClass("text-center");
+    // $("#contact-me").addClass("text-left");
+    // $("#contact-list").removeClass("text-center").addClass("text-right"); Fix this crap
   }
 }
 resizeNav();
