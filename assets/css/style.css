@@ -34,6 +34,13 @@ a {
 .card-margin {
   margin-top: 15px; /*Hard Coded!*/
 }
+.card {
+  transition: 0.5s;
+}
+.card:hover {
+  background-color: #f1f0f0;
+  color: #111111;
+}
 
 @media (min-width: 768px) {
 }
