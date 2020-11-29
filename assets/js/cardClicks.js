@@ -14,6 +14,9 @@ $("#weather-dashboard").on("click", function () {
 $("#run-buddy").on("click", function () {
   open("https://treguv.github.io/run-buddy/");
 });
+$("#note-taker").on("click", function () {
+  open("https://github.com/treguv/note-taker/tree/main");
+});
 
 //Make the nav bar elements change size based on screen size
 function resizeNav() {
