@@ -17,6 +17,9 @@ $("#run-buddy").on("click", function () {
 $("#note-taker").on("click", function () {
   open("https://github.com/treguv/note-taker/tree/main");
 });
+$("#stuck-inside").on("click", function () {
+  open("http://www.stuckinside.tech");
+});
 
 //Make the nav bar elements change size based on screen size
 function resizeNav() {

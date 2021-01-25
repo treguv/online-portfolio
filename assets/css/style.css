@@ -35,12 +35,13 @@ a {
   margin-top: 15px; /*Hard Coded!*/
 }
 .card {
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .card:hover {
   background-color: #f1f0f0;
   color: #111111;
-  text-shadow: 0px 0px 1px black;
+  /* text-shadow: 0px 0px 1px black; */
+  transform: scale(1.05, 1.05);
 }
 
 @media (min-width: 768px) {
