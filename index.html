@@ -14,153 +14,48 @@
   </head>
   <body>
     <!-- General Container -->
-    <div class="container" id="body-container">
+    <div class="container-fluid" id="body-container">
       <!-- Top Section -->
-      <div class="row" id="head-row">
-        <div class="col-sm-4">
-          <h2 class="text-center">Vladislav Tregubov</h2>
-        </div>
-        <div class="col-sm-8 text-center">
-          <ul id="header-list" class="list-inline nav-item">
-            <li class="list-inline-item">
+      <div class="row py-4" id="head-row">
+        <div class="col-sm-12 text-center">
+          <ul id="header-list" class="list-inline">
+            <li class="list-inline-item " >
               <a
                 href="https://docs.google.com/document/d/1xn_1RWO4VOn0pQHqaEOdVg9O9XaOygAWEq-4q-Yh1CE/edit"
-                >Resume</a
+                ><h4 class = "nav-item px-5">ABOUT ME</h4></a
               >
             </li>
-            <li class="list-inline-item nav-item">
-              <a href="https://github.com/treguv">GitHub</a>
-            </li>
-            <li class="list-inline-item nav-item">
+            
+            <li class="list-inline-item ">
               <a href="https://www.linkedin.com/in/vladislav-tregubov-b887b6175"
-                >Linkedin</a
+                ><h4 class = "nav-item px-5">MY WORK</h4></a
               >
+            </li>
+
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/vladislav-tregubov-b887b6175"
+                ><h4 class = "nav-item px-5">CONTACT ME</h4></a
+              >
+            </li>
+            <li class="list-inline-item ">
+              <a href="https://github.com/treguv"><h4 class = "nav-item px-5">SOCIALS</h4></a>
             </li>
           </ul>
-        </div>
+        </div>     
+        
       </div>
-      <!-- About me -->
-      <div class="row">
-        <div class="col-sm-12">
-          <h3 id="about-me-header" class="text-center general-padding">
-            About Me
-          </h3>
-        </div>
-        <div class="col-sm-12">
-          <p class="text-center lead general-padding">
-            Hi. My name is Vlad. I am a junior student at University of
-            Washington Tacoma studying Computer Science and Systems. I am also
-            taking part in a Full-Stack Web Development bootcamp at University
-            of Berkely California studying the MERN stack. Below you can find
-            examples of my work.
-          </p>
-        </div>
-      </div>
-      <!-- Cards with work -->
-      <div class="row">
-        <div class="col-sm-12">
-          <h3 id="about-me-header" class="text-center general-padding">
-            My Work
-          </h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4 card-margin">
-          <!-- Fly High -->
-          <div
-            class="card h-100 mx-auto my-2 shadow-sm"
-            style="width: 18rem"
-            id="fly-high"
-          >
-            <img
-              class="card-img-top"
-              src="./assets/img/fly-high.jpg"
-              alt="Kite on black background"
-            />
-            <div class="card-body">
-              <h3 class="card-title text-center">Fly High</h3>
-              <p class="text-center card-text">
-                Html / Bulma / jQuery / External API's
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 card-margin">
-          <!-- PDF Highlight Combiner -->
-          <div
-            class="card h-100 mx-auto my-2 shadow-sm"
-            style="width: 18rem"
-            id="pdf-highlight"
-          >
-            <img
-              class="card-img-top"
-              src="./assets/img/pdf-highlight.png"
-              alt="Highlighted PDF"
-            />
-            <div class="card-body">
-              <h3 class="card-title text-center">PDF Highlight Combiner</h3>
-              <!-- <p class="text-center card-text">Dubhacks 2020</p> -->
-              <p class="text-center card-text">Java / PDFBox / PDFClown</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 card-margin">
-          <!-- Note Taker -->
-          <div
-            class="card h-100 mx-auto my-2 shadow-sm"
-            style="width: 18rem"
-            id="note-taker"
-          >
-            <img
-              class="card-img-top"
-              src="./assets/img/notepad-img.png"
-              alt="notepad"
-            />
-            <div class="card-body">
-              <h3 class="card-title text-center">Note Taker</h3>
-              <p class="text-center card-text">
-                Node.js / Express.js / JavaScript / HTML / CSS
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 card-margin">
-          <!-- Weather Dashboard -->
-          <div
-            class="card h-100 mx-auto my-2 shadow-sm"
-            style="width: 18rem"
-            id="weather-dashboard"
-          >
-            <img
-              class="card-img-top"
-              src="./assets/img/weather-dashboard.jpg"
-              alt="Sun on blue background"
-            />
-            <div class="card-body">
-              <h3 class="card-title text-center">Weather Dashboard</h3>
-              <p class="text-center card-text">
-                Html / Bootstrap / Javascript / jQuery / External API
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 card-margin ">
-          <!-- Run Buddy -->
-          <div class="card h-100 mx-auto my-2" style="width: 18rem" id="run-buddy">
-            <img
-              class="card-img-top shadow-sm"
-              src="./assets/img/run-buddy.jpg"
-              alt="Run Buddy"
-            />
-            <div class="card-body">
-              <h3 class="card-title text-center">Run Buddy</h3>
-              <p class="text-center card-text">Html / CSS</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
+
+      <!-- Image with quote -->
+      <div class ="row">
+        <div class = "col-sm-12" id ="jumbotron">
+          <blockquote id="jumbotron-text" class="text-center blockquote"> 
+            <p>“The expert in anything was once a beginner.”</p> 
+            <footer class="blockquote-footer">Anonymous</footer>
+          </blockquote>
+        </div>
+      </div>
+      </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
@@ -169,23 +64,24 @@
     <!-- Add js files -->
     <script src="assets/js/cardClicks.js"></script>
   </body>
+
   <div class="container-fluid">
     <div class="row general-padding-sm" id="footer-row">
       <!-- Footer -->
       <div class="col-sm-12 col-md-4">
-        <h4 class="text-center">Contact Me:</h4>
+        <h4 class="text-center main-text">Contact Me:</h4>
       </div>
       <div class="col-sm-12 col-md-8 text-center">
         <ul id="header-list" class="list-inline footer-item">
           <li class="list-inline-item">
-            <a
+            <a class="main-text"
               href="https://docs.google.com/document/d/1xn_1RWO4VOn0pQHqaEOdVg9O9XaOygAWEq-4q-Yh1CE/edit"
               >Email: treguv@uw.edu</a
             >
           </li>
           
           <li class="list-inline-item footer-item">
-            <a href="https://www.linkedin.com/in/vladislav-tregubov-b887b6175"
+            <a class ="main-text" href="https://www.linkedin.com/in/vladislav-tregubov-b887b6175"
               >Linkedin</a
             >
           </li>
