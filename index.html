@@ -9,6 +9,8 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Portfolio</title>
   </head>
@@ -18,7 +20,7 @@
       <!-- Top Section -->
       <div class="row" id="head-row">
         <div class="col-sm-4">
-          <h2 class="text-center">Vladislav Tregubov</h2>
+          <h2 class="text-center  text-main">Vladislav Tregubov</h2>
         </div>
         <div class="col-sm-8 text-center">
           <ul id="header-list" class="list-inline nav-item">
@@ -28,7 +30,7 @@
                 >Resume</a
               >
             </li>
-            <li class="list-inline-item nav-item">
+            <li class="list-inline-item nav-item ">
               <a href="https://github.com/treguv">GitHub</a>
             </li>
             <li class="list-inline-item nav-item">
@@ -36,29 +38,36 @@
                 >Linkedin</a
               >
             </li>
+            <li class="list-inline-item nav-item">
+              <a href="mailto:treguv@uw.edu?subject=Contact from Portfolio">
+                treguv@uw.edu
+                </a>
+            </li>
           </ul>
         </div>
       </div>
       <!-- About me -->
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 text-main">
           <h2 id="about-me-header" class="text-center general-padding">
             About Me
           </h2>
         </div>
-        <div class="col-sm-12">
+        <div class="col-sm-12 text-main">
           <p class="text-center lead general-padding">
             Hi. My name is Vlad. I am a junior student at University of
-            Washington Tacoma studying Computer Science and Systems. I am also
-            taking part in a Full-Stack Web Development bootcamp at University
-            of Berkely California studying the MERN stack. Below you can find
+            Washington Tacoma studying Computer Science and Systems. 
+            I am also a certified MERN stack developer having completed 
+            the University of Berkely Certificate for MERN development. <br>
+            <br>
+            Below you can find
             examples of my work.
           </p>
         </div>
       </div>
       <!-- Cards with work -->
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12  text-main">
           <h2 id="about-me-header" class="text-center general-padding">
             My Work
           </h2>
@@ -66,21 +75,59 @@
       </div>
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 card-margin">
-          <!-- Stuck Inside -->
+          <!-- PDF Highlight Combiner -->
           <div
             class="card h-100 mx-auto my-2 shadow-sm"
             style="width: 18rem"
-            id="stuck-inside"
+            id="pdf-highlight"
           >
             <img
               class="card-img-top"
-              src="./assets/img/stuckinside-img.png"
+              src="./assets/img/SuperHeroSmash.gif"
+              alt="Highlighted PDF"
+            />
+            <div class="card-body">
+              <h3 class="card-title text-center">SuperHero Smash</h3>
+              <!-- <p class="text-center card-text">Dubhacks 2020</p> -->
+              <p class="text-center card-text">Node.js / React.js / GraphQL / MongoDB / Express.js/ Etc
+                <br>
+                <a href="https://github.com/melissabarrerafarias/superherosmash" class="text-center project-link">Github</a>
+                <a href="https://superherosmash.herokuapp.com/" class="text-center project-link">Deployed</a>
+              </p>
+              <p class="card-text text-center">
+                This project provided a platform for users to vote for the strongest superhero and have disussions about their choices.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 card-margin">
+          
+          
+          <!-- Stuck Inside -->
+          <div
+            class="card h-100 mx-auto my-2 shadow-sm "
+            style="width: 18rem"
+            id="stuck-inside"
+
+          >
+
+              <img
+              class="card-img-top"
+              src="./assets/img/stuckInside.gif"
               alt="stuck inside on background"
             />
             <div class="card-body">
               <h3 class="card-title text-center">stuckInside</h3>
               <p class="text-center card-text">
                 Full Stack / Node.js / Handlebars.js / Express.js / mySQL / Cloudinary
+                <br>
+                <a href="https://github.com/treguv/stuckInside" class="text-center project-link">Github</a>
+                <a href="http://www.stuckinside.tech/" class="text-center project-link">Deployed</a>
+              </p>
+              
+              <p class="card-text text-center">
+               The purpose of this project was to provide a no-filter social 
+               media platform for users to share their daily life in quarantine.
               </p>
             </div>
           </div>
@@ -94,14 +141,20 @@
           >
             <img
               class="card-img-top"
-              src="./assets/img/fly-high.jpg"
+              src="./assets/img/Fly-High-_1_.gif"
               alt="Kite on black background"
             />
             <div class="card-body">
               <h3 class="card-title text-center">Fly High</h3>
               <p class="text-center card-text">
-                Html / Bulma / jQuery / External API's
+                Html / Bulma / jQuery / External API's <br>
+                <a href="https://github.com/treguv/fly-high" class="text-center project-link">Github</a>
+                <a href="https://treguv.github.io/fly-high/" class="text-center project-link">Deployed</a>
               </p>
+              <p class="card-text text-center">
+                The purpose of this project was to solve the issue of never knowing where to go to fly a 
+                kite by allowing users to search locations and get conditions.
+               </p>
             </div>
           </div>
         </div>
@@ -120,7 +173,14 @@
             <div class="card-body">
               <h3 class="card-title text-center">PDF Highlight Combiner</h3>
               <!-- <p class="text-center card-text">Dubhacks 2020</p> -->
-              <p class="text-center card-text">Java / PDFBox / PDFClown</p>
+              <p class="text-center card-text">Java / PDFBox / PDFClown 
+                <br>
+                <a href="https://github.com/treguv/dubhacks2020" class="text-center project-link">Github</a>
+              </p>
+              <p class="card-text text-center">
+                The purpose of this project was to provide an easier way for teachers to see 
+                their students anotations in one place and in a way that provided useful information.
+               </p>
             </div>
           </div>
         </div>
@@ -139,8 +199,13 @@
             <div class="card-body">
               <h3 class="card-title text-center">Note Taker</h3>
               <p class="text-center card-text">
-                Node.js / Express.js / JavaScript / HTML / CSS
+                Node.js / Express.js / JavaScript / HTML / CSS <br>
+                <a href="https://github.com/treguv/note-taker" class="text-center project-link">Github</a>
+                <a href="https://morning-lake-16377.herokuapp.com/" class="text-center project-link">Deployed</a>
               </p>
+              <p class="card-text text-center">
+                The purpose of this project was to provide an online platform to take notes and manage them on the web.
+               </p>
             </div>
           </div>
         </div>
@@ -159,25 +224,17 @@
             <div class="card-body">
               <h3 class="card-title text-center">Weather Dashboard</h3>
               <p class="text-center card-text">
-                Html / Bootstrap / Javascript / jQuery / External API
+                Html / Bootstrap / Javascript / jQuery / External API <br>
+                <a href="https://github.com/treguv/weather-dashboard" class="text-center project-link">Github</a>
+                <a href="https://treguv.github.io/weather-dashboard/" class="text-center project-link">Deployed</a>
               </p>
+              <p class="card-text text-center">
+                The purpose of this project was to provide a place for users to be able to search locations and get a weather forecast for that area.
+               </p>
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 card-margin ">
-          <!-- Run Buddy -->
-          <div class="card h-100 mx-auto my-2" style="width: 18rem" id="run-buddy">
-            <img
-              class="card-img-top shadow-sm"
-              src="./assets/img/run-buddy.jpg"
-              alt="Run Buddy"
-            />
-            <div class="card-body">
-              <h3 class="card-title text-center">Run Buddy</h3>
-              <p class="text-center card-text">Html / CSS</p>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
 
@@ -193,7 +250,7 @@
     <div class="row general-padding-sm" id="footer-row">
       <!-- Footer -->
       <div class="col-sm-12 col-md-4">
-        <h4 id="contact-me" class="text-center">Contact Me:</h4>
+        <h4 id="contact-me" class="text-center text-main">Contact Me:</h4>
       </div>
       <div id="contact-list" class="col-sm-12 col-md-8 text-center">
         <ul  class="list-inline footer-item">
