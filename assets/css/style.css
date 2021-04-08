@@ -1,8 +1,12 @@
 :root {
-  --main-text: #e94560;
-  --background-main: #1a1a2e;
+  --main-text: #ffffff;
+  --main: #75b9be;
+  --secondary: #0f3460;
   --border-main: #0f3460;
-  --highlight: #16213e;
+  --highlight: #000000;
+  --card-background: rgba(255, 255, 255, 0.2);
+  --card-background-hover: rgba(0, 0, 0, 0.8);
+  --text-outline: #000000;
 }
 * {
   font-family: "Roboto Mono", monospace;
@@ -13,8 +17,10 @@
   padding-top: 30px;
 }
 body {
-  /* background-image: linear-gradient(white, ivory); */
-  background-color: var(--background-main);
+  /* background-image: url("../img/background-img.jpg");
+  background-size: cover;
+  background-position: center; */
+  background-color: var(--main);
 }
 
 #header-list {
@@ -37,8 +43,8 @@ a:hover {
   color: var(--main-text);
 }
 .project-link {
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+  text-shadow: -1px -1px 0 var(--text-outline), 1px -1px 0 var(--text-outline),
+    -1px 1px 0 var(--text-outline), 1px 1px 0 #000;
   transition: 0.2s;
 }
 
@@ -58,12 +64,12 @@ a:hover {
 }
 .card {
   transition: 0.2s;
-  background-color: #0f3460;
+  background-color: var(--card-background);
   color: var(--main-text);
 }
 .card:hover {
   /* background-color: #f1f0f0; */
-  background-color: #1d4980;
+  background-color: var(--card-background-hover);
   /* text-shadow: 0px 0px 1px black; */
   transform: scale(1.05, 1.05);
 }
@@ -81,4 +87,7 @@ a:hover {
 
 .project-link {
   text-align: center;
+}
+#head-row {
+  background-color: var(--second);
 }
