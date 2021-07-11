@@ -9,14 +9,14 @@ function App() {
     <div className="App">
       <Container fluid > 
       {/* Navbar */}
-        <Row>
-          <Col>
+        <Row fluid>
+          <Col className="px-0" fluid>
             <NavBar></NavBar>
           </Col>
         </Row>
         {/* home page body */}
         <Row>
-          <Col>
+          <Col fluid>
             <Home></Home>
           </Col>
         </Row>

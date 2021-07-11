@@ -4,7 +4,7 @@ import "./Home.css";
 
 function Home() {
     return (
-        <Container className="">
+
             <Row className="align-items-center">
                 <Col sm={12} lg={6}>
                     <Image src="https://i.graphicmama.com/blog/wp-content/uploads/2016/12/06083212/gravity_drib2.gif" fluid></Image>
@@ -19,7 +19,6 @@ function Home() {
                     
                 </Col>
             </Row>
-        </Container>
     )
 }
 

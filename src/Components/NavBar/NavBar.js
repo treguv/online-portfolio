@@ -3,8 +3,7 @@ import { Container, Nav, Navbar, Form, FormControl, Button } from "react-bootstr
 import "./NavBar.css"
 function NavBar() {
   return(
-    <Container fluid className="noMargin noPadding">
-    <Navbar bg="dark" variant="dark" className="noPadding noMargin" >
+    <Navbar  bg="dark" variant="dark" className="" >
         <Navbar.Brand href="#home">Navbar</Navbar.Brand>
         <Nav className="mr-auto">
             <Nav.Link href="#home">Home</Nav.Link>
@@ -12,7 +11,6 @@ function NavBar() {
             <Nav.Link href="#pricing">About&nbsp;Me</Nav.Link>
         </Nav>
     </Navbar>
-    </Container>
   );
 }
 
