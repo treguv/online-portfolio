@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './Components/NavBar/NavBar';
 import Home from './Components/Home/Home';
+
 import {Container, Row, Col, Image, Nav} from "react-bootstrap";
 function App() {
   return (

@@ -1,27 +1,18 @@
 import react from "react";
-import { Nav } from "react-bootstrap";
-
+import { Container, Nav, Navbar, Form, FormControl, Button } from "react-bootstrap";
+import "./NavBar.css"
 function NavBar() {
   return(
-<Nav
-  activeKey="/home"
-  onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
->
-  <Nav.Item>
-    <Nav.Link href="/home">Home</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="link-1">Projects</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="link-2">About Me </Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="disabled">
-      Contact Me
-    </Nav.Link>
-  </Nav.Item>
-</Nav>
+    <Container fluid className="noMargin noPadding">
+    <Navbar bg="dark" variant="dark" className="noPadding noMargin" >
+        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+        <Nav className="mr-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Projects</Nav.Link>
+            <Nav.Link href="#pricing">About&nbsp;Me</Nav.Link>
+        </Nav>
+    </Navbar>
+    </Container>
   );
 }
 
