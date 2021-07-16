@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './Components/NavBar/NavBar';
 import Home from './Components/Home/Home';
 import Projects from './Components/Projects/Projects'
+import Footer from './Components/Footer/Footer';
 
 import {Container, Row, Col, Image, Nav} from "react-bootstrap";
 function App() {
@@ -23,6 +24,12 @@ function App() {
         </Row>
         <Row>
           <Projects></Projects>
+        </Row>
+
+        <Row fluid>
+          <Col className="px-0" fluid>
+            <Footer></Footer>
+          </Col>
         </Row>
       </Container>
 
