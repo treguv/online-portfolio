@@ -1,0 +1,27 @@
+.card{
+    margin:5%;
+    padding:2%;
+    box-shadow: 5px;
+    filter: drop-shadow(1px 1px 2px #000000);
+    transition: 0.2s;
+}
+
+.card:hover{
+    transform: scale(1.02, 1.02);
+}
+
+.cardButton{
+    margin:5px;
+    background-color:#0C3227 !important;
+    border-color:#000000 !important;
+    outline:0 !important;
+    transition: 0.2s;
+
+}
+.cardButton:hover{
+    margin:5px;
+    background-color:#1b6e57 !important;
+    border-color:#000000 !important;
+    outline:0 !important;
+    transform: scale(1.02, 1.02)
+}

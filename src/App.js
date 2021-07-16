@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './Components/NavBar/NavBar';
 import Home from './Components/Home/Home';
+import Projects from './Components/Projects/Projects'
 
 import {Container, Row, Col, Image, Nav} from "react-bootstrap";
 function App() {
@@ -19,6 +20,9 @@ function App() {
           <Col fluid>
             <Home></Home>
           </Col>
+        </Row>
+        <Row>
+          <Projects></Projects>
         </Row>
       </Container>
 
