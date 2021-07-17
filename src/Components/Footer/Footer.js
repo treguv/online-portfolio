@@ -3,7 +3,7 @@ import { Container, Nav, Navbar, Form, FormControl, Button } from "react-bootstr
 import "./Footer.css"
 function Footer() {
   return(
-    <Navbar sticky="top" bg="dark" variant="dark" >
+    <Navbar sticky="bottom" bg="dark" variant="dark" >
         <Navbar.Brand href="#home">Contact Me </Navbar.Brand>
         <Nav className="mr-auto">
             <Nav.Link href="#home">Email</Nav.Link>

@@ -1,9 +1,13 @@
 .card{
     margin:5%;
-    padding:2%;
+    padding:5%;
+    padding-left:10%!important;
+    padding-left:10%!important;
     box-shadow: 5px;
     filter: drop-shadow(1px 1px 2px #000000);
     transition: 0.2s;
+    height:100%;
+    /* width: 75% !important; */
 }
 
 .card:hover{

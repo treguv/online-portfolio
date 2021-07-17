@@ -1,19 +1,27 @@
 import react from 'react'
 import {Container, Row, Col, Image, Card, Button} from "react-bootstrap";
 import "./ProjectCard.css"
-let githubURL = "";
-let deployedURL = "";
-function ProjectCard(props){
-    console.log(props.img);
-    githubURL = props.github;
-    deployedURL = props.deployed;
+
+function ProjectCard({img, github, deployed, name, description}){
+    console.log(img);
+
+    const openGithub = (e) => {
+        e.preventDefault();
+        console.log(github);
+        window.open(github);
+    }
+    const openDeployed = (e) => {
+        e.preventDefault();
+        console.log(deployed);
+        window.open(deployed);
+    }
     return (
         <Card className="card" style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={props.img}/>
+        <Card.Img variant="top" src={img}/>
         <Card.Body>
-            <Card.Title>{props.name}</Card.Title>
+            <Card.Title>{name}</Card.Title>
             <Card.Text>
-                {props.description}
+                {description}
             </Card.Text>
             <Button className="cardButton" variant="primary" onClick={openGithub}>Github Repo</Button>
             <Button className="cardButton" variant="primary" onClick={openDeployed}>Deployed App</Button>
@@ -22,14 +30,5 @@ function ProjectCard(props){
     )
 }
 
-function openGithub(e){
-    e.preventDefault();
-    console.log(githubURL);
-    window.open(githubURL);
-}
-function openDeployed(e){
-    e.preventDefault();
-    console.log(deployedURL);
-    window.open(deployedURL);
-}
+
 export default ProjectCard;

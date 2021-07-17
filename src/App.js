@@ -11,9 +11,9 @@ function App() {
     <div className="App">
       <Container fluid > 
       {/* Navbar */}
-        <Row fluid>
+        <Row fluid className="justify-content-md-center">
           <Col className="px-0" fluid>
-            <NavBar></NavBar>
+            <NavBar expand="sm"></NavBar>
           </Col>
         </Row>
         {/* home page body */}
@@ -22,7 +22,7 @@ function App() {
             <Home></Home>
           </Col>
         </Row>
-        <Row>
+        <Row className="my-5 justify-content-md-center">
           <Projects></Projects>
         </Row>
 
