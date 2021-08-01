@@ -9,3 +9,13 @@
 .bold-text{
     font-weight: 800;
 }
+
+.about-me {
+    padding-left:12%!important;
+    padding-right:12%!important;
+    
+}
+
+.bottom-border{
+    border-bottom: 1px dashed #000000;
+}
