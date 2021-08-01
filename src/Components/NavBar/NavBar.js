@@ -12,6 +12,7 @@ function NavBar({expand}) {
       <Nav.Link href="#home">Home</Nav.Link>
       <Nav.Link href="#aboutme">About Me</Nav.Link>
       <Nav.Link href="#projects"> Projects</Nav.Link>
+      <Nav.Link href="#contact"> Contact Me</Nav.Link>
     </Nav>
   </Navbar.Collapse>
   </Container>

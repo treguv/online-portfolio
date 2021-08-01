@@ -5,7 +5,7 @@ import "./Home.css";
 function Home() {
     return (
         <div>
-            <Row className="align-items-center">
+            <Row className="align-items-center" id="home">
                 <Col sm={12} lg={6}>
                     <Image src="https://i.graphicmama.com/blog/wp-content/uploads/2016/12/06083212/gravity_drib2.gif" fluid></Image>
                     {/* <Image fluid src ="https://lh3.googleusercontent.com/proxy/WWaKXr1HPYm_Lw6XXlgjEDsj-Z7vvLv2MEnPJeHvYlW66otWdiKjdjZfYLgBpWZz_7OiRqRnRdbCwJmjuXySD35yrfpxYH1ZZeriegxLgL3_GC1qe6cT9D1RDFxZovc3KJ63efTX" ></Image> */}
@@ -20,7 +20,7 @@ function Home() {
                 </Col>
             </Row>
             <Row>
-                <Col sm={12} className ="about-me" >
+                <Col sm={12} id="aboutme" className ="about-me" >
                     <h1 className="bottom-border">About Me</h1>
                     <h3 className="about-me">Hi! My Name is Vlad!</h3>
                     <h5>I am a soon to be graduating Computer Science student 
@@ -40,7 +40,7 @@ function Home() {
 
             <Row>
                 <Col sm={12} className ="about-me" >
-                    <h1 className="bottom-border"> Projects</h1>
+                    <h1 className="bottom-border" id="projects"> Projects</h1>
                 </Col>
             </Row>
         </div>

@@ -19,7 +19,7 @@ function Footer() {
   }
   return(
     <Navbar sticky="bottom" bg="dark" variant="dark" >
-        <Navbar.Brand href="#home">Contact Me </Navbar.Brand>
+        <Navbar.Brand href="#home" id="contact">Contact Me </Navbar.Brand>
         <Nav className="mr-auto">
             <Nav.Link href="#email" onSelect = {() => {openEmail()}}>Email</Nav.Link>
             <Nav.Link href="#linkedin" onSelect = {() => {openLinkedIn()}}>LinkedIn</Nav.Link>
