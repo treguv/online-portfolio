@@ -17,16 +17,29 @@ function Footer() {
     console.log("openning linkedin");
     window.open("https://github.com/");
   }
-  return(
-    <Navbar sticky="bottom" bg="dark" variant="dark" >
-        <Navbar.Brand href="#home" id="contact">Contact Me </Navbar.Brand>
-        <Nav className="mr-auto">
-            <Nav.Link href="#email" onSelect = {() => {openEmail()}}>Email</Nav.Link>
-            <Nav.Link href="#linkedin" onSelect = {() => {openLinkedIn()}}>LinkedIn</Nav.Link>
-            <Nav.Link href="#github" onSelect = {() => {openGithub()}}>GitHub</Nav.Link>
-        </Nav>
+  if(window.screen.width <=700){
+    return (
+      <Navbar sticky="bottom" bg="dark" variant="dark" >
+      <Nav className="mr-auto">
+          <Nav.Link href="#email" onSelect = {() => {openEmail()}}>Email</Nav.Link>
+          <Nav.Link href="#linkedin" onSelect = {() => {openLinkedIn()}}>LinkedIn</Nav.Link>
+          <Nav.Link href="#github" onSelect = {() => {openGithub()}}>GitHub</Nav.Link>
+      </Nav>
     </Navbar>
-  );
+    )
+  }
+  else {
+    return(
+      <Navbar sticky="bottom" bg="dark" variant="dark" >
+          <Navbar.Brand href="#home" id="contact">Contact Me </Navbar.Brand>
+          <Nav className="mr-auto">
+              <Nav.Link href="#email" onSelect = {() => {openEmail()}}>Email</Nav.Link>
+              <Nav.Link href="#linkedin" onSelect = {() => {openLinkedIn()}}>LinkedIn</Nav.Link>
+              <Nav.Link href="#github" onSelect = {() => {openGithub()}}>GitHub</Nav.Link>
+          </Nav>
+      </Navbar>
+    );
+  }
 }
 
 export default Footer;

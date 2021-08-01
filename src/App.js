@@ -12,7 +12,7 @@ function App() {
       <Container fluid > 
       {/* Navbar */}
         <Row fluid className="justify-content-md-center">
-          <Col className="px-0" fluid>
+          <Col className="px-0 mx-0" fluid>
             <NavBar expand="sm"></NavBar>
           </Col>
         </Row>
