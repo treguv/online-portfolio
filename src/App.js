@@ -9,10 +9,10 @@ import {Container, Row, Col, Image, Nav} from "react-bootstrap";
 function App() {
   return (
     <div className="App">
-      <Container fluid > 
+      <Container fluid className = "noPadding"> 
       {/* Navbar */}
-        <Row fluid className="justify-content-md-center">
-          <Col className="px-0 mx-0" fluid>
+        <Row fluid className="justify-content-md-center noPadding">
+          <Col className="px-0 mx-0" >
             <NavBar expand="sm"></NavBar>
           </Col>
         </Row>
